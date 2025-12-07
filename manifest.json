@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "English Helper: Meaning & Pronunciation",
+  "version": "3.0",
+  "description": "Get pronunciation, meaning, synonyms, examples & speak words instantly.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
